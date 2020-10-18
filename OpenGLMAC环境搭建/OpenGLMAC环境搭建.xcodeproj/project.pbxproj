@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2648C201253C22B800502525 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2648C200253C22B800502525 /* GLUT.framework */; };
+		2648C203253C22C500502525 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2648C202253C22C500502525 /* OpenGL.framework */; };
+		267F7FEB253C1FDD009D1B80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267F7FEA253C1FDD009D1B80 /* Assets.xcassets */; };
+		267F7FEE253C1FDD009D1B80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267F7FEC253C1FDD009D1B80 /* Main.storyboard */; };
+		267F7FFC253C1FDD009D1B80 /* OpenGLMAC____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F7FFB253C1FDD009D1B80 /* OpenGLMAC____Tests.m */; };
+		267F8007253C1FDD009D1B80 /* OpenGLMAC____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 267F8006253C1FDD009D1B80 /* OpenGLMAC____UITests.m */; };
+		26B15689253C3FF200252B8C /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26B15688253C3FF200252B8C /* libGLTools.a */; };
+		26B1568B253C42AB00252B8C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26B1568A253C42AB00252B8C /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		267F7FF8253C1FDD009D1B80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 267F7FD9253C1FDB009D1B80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 267F7FE0253C1FDB009D1B80;
+			remoteInfo = "OpenGLMAC环境搭建";
+		};
+		267F8003253C1FDD009D1B80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 267F7FD9253C1FDB009D1B80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 267F7FE0253C1FDB009D1B80;
+			remoteInfo = "OpenGLMAC环境搭建";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2648C200253C22B800502525 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		2648C202253C22C500502525 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		267F7FE1253C1FDB009D1B80 /* OpenGLMAC环境搭建.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGLMAC环境搭建.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		267F7FEA253C1FDD009D1B80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		267F7FED253C1FDD009D1B80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		267F7FEF253C1FDD009D1B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		267F7FF2253C1FDD009D1B80 /* OpenGLMAC____.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OpenGLMAC____.entitlements"; sourceTree = "<group>"; };
+		267F7FF7253C1FDD009D1B80 /* OpenGLMAC环境搭建Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGLMAC环境搭建Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		267F7FFB253C1FDD009D1B80 /* OpenGLMAC____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OpenGLMAC____Tests.m"; sourceTree = "<group>"; };
+		267F7FFD253C1FDD009D1B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		267F8002253C1FDD009D1B80 /* OpenGLMAC环境搭建UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGLMAC环境搭建UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		267F8006253C1FDD009D1B80 /* OpenGLMAC____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OpenGLMAC____UITests.m"; sourceTree = "<group>"; };
+		267F8008253C1FDD009D1B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26B15679253C3FF200252B8C /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		26B1567A253C3FF200252B8C /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		26B1567B253C3FF200252B8C /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		26B1567C253C3FF200252B8C /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		26B1567D253C3FF200252B8C /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		26B1567E253C3FF200252B8C /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		26B1567F253C3FF200252B8C /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		26B15680253C3FF200252B8C /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		26B15681253C3FF200252B8C /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		26B15682253C3FF200252B8C /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		26B15684253C3FF200252B8C /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		26B15685253C3FF200252B8C /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		26B15686253C3FF200252B8C /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		26B15687253C3FF200252B8C /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		26B15688253C3FF200252B8C /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
+		26B1568A253C42AB00252B8C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		267F7FDE253C1FDB009D1B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B15689253C3FF200252B8C /* libGLTools.a in Frameworks */,
+				2648C203253C22C500502525 /* OpenGL.framework in Frameworks */,
+				2648C201253C22B800502525 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		267F7FF4253C1FDD009D1B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		267F7FFF253C1FDD009D1B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2648C1FF253C22B800502525 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2648C202253C22C500502525 /* OpenGL.framework */,
+				2648C200253C22B800502525 /* GLUT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		267F7FD8253C1FDB009D1B80 = {
+			isa = PBXGroup;
+			children = (
+				267F7FE3253C1FDB009D1B80 /* OpenGLMAC环境搭建 */,
+				267F7FFA253C1FDD009D1B80 /* OpenGLMAC环境搭建Tests */,
+				267F8005253C1FDD009D1B80 /* OpenGLMAC环境搭建UITests */,
+				267F7FE2253C1FDB009D1B80 /* Products */,
+				2648C1FF253C22B800502525 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		267F7FE2253C1FDB009D1B80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				267F7FE1253C1FDB009D1B80 /* OpenGLMAC环境搭建.app */,
+				267F7FF7253C1FDD009D1B80 /* OpenGLMAC环境搭建Tests.xctest */,
+				267F8002253C1FDD009D1B80 /* OpenGLMAC环境搭建UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		267F7FE3253C1FDB009D1B80 /* OpenGLMAC环境搭建 */ = {
+			isa = PBXGroup;
+			children = (
+				26B15677253C3FF200252B8C /* OpenGlShare */,
+				267F7FEA253C1FDD009D1B80 /* Assets.xcassets */,
+				267F7FEC253C1FDD009D1B80 /* Main.storyboard */,
+				267F7FEF253C1FDD009D1B80 /* Info.plist */,
+				26B1568A253C42AB00252B8C /* main.cpp */,
+				267F7FF2253C1FDD009D1B80 /* OpenGLMAC____.entitlements */,
+			);
+			path = "OpenGLMAC环境搭建";
+			sourceTree = "<group>";
+		};
+		267F7FFA253C1FDD009D1B80 /* OpenGLMAC环境搭建Tests */ = {
+			isa = PBXGroup;
+			children = (
+				267F7FFB253C1FDD009D1B80 /* OpenGLMAC____Tests.m */,
+				267F7FFD253C1FDD009D1B80 /* Info.plist */,
+			);
+			path = "OpenGLMAC环境搭建Tests";
+			sourceTree = "<group>";
+		};
+		267F8005253C1FDD009D1B80 /* OpenGLMAC环境搭建UITests */ = {
+			isa = PBXGroup;
+			children = (
+				267F8006253C1FDD009D1B80 /* OpenGLMAC____UITests.m */,
+				267F8008253C1FDD009D1B80 /* Info.plist */,
+			);
+			path = "OpenGLMAC环境搭建UITests";
+			sourceTree = "<group>";
+		};
+		26B15677253C3FF200252B8C /* OpenGlShare */ = {
+			isa = PBXGroup;
+			children = (
+				26B15678253C3FF200252B8C /* include */,
+				26B15688253C3FF200252B8C /* libGLTools.a */,
+			);
+			path = OpenGlShare;
+			sourceTree = "<group>";
+		};
+		26B15678253C3FF200252B8C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				26B15679253C3FF200252B8C /* GLBatchBase.h */,
+				26B1567A253C3FF200252B8C /* math3d.h */,
+				26B1567B253C3FF200252B8C /* GLTriangleBatch.h */,
+				26B1567C253C3FF200252B8C /* GLBatch.h */,
+				26B1567D253C3FF200252B8C /* GLMatrixStack.h */,
+				26B1567E253C3FF200252B8C /* GLFrame.h */,
+				26B1567F253C3FF200252B8C /* GLFrustum.h */,
+				26B15680253C3FF200252B8C /* GLGeometryTransform.h */,
+				26B15681253C3FF200252B8C /* GLShaderManager.h */,
+				26B15682253C3FF200252B8C /* StopWatch.h */,
+				26B15683253C3FF200252B8C /* GL */,
+				26B15687253C3FF200252B8C /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		26B15683253C3FF200252B8C /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				26B15684253C3FF200252B8C /* glxew.h */,
+				26B15685253C3FF200252B8C /* wglew.h */,
+				26B15686253C3FF200252B8C /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		267F7FE0253C1FDB009D1B80 /* OpenGLMAC环境搭建 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 267F800B253C1FDD009D1B80 /* Build configuration list for PBXNativeTarget "OpenGLMAC环境搭建" */;
+			buildPhases = (
+				267F7FDD253C1FDB009D1B80 /* Sources */,
+				267F7FDE253C1FDB009D1B80 /* Frameworks */,
+				267F7FDF253C1FDB009D1B80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenGLMAC环境搭建";
+			productName = "OpenGLMAC环境搭建";
+			productReference = 267F7FE1253C1FDB009D1B80 /* OpenGLMAC环境搭建.app */;
+			productType = "com.apple.product-type.application";
+		};
+		267F7FF6253C1FDD009D1B80 /* OpenGLMAC环境搭建Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 267F800E253C1FDD009D1B80 /* Build configuration list for PBXNativeTarget "OpenGLMAC环境搭建Tests" */;
+			buildPhases = (
+				267F7FF3253C1FDD009D1B80 /* Sources */,
+				267F7FF4253C1FDD009D1B80 /* Frameworks */,
+				267F7FF5253C1FDD009D1B80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				267F7FF9253C1FDD009D1B80 /* PBXTargetDependency */,
+			);
+			name = "OpenGLMAC环境搭建Tests";
+			productName = "OpenGLMAC环境搭建Tests";
+			productReference = 267F7FF7253C1FDD009D1B80 /* OpenGLMAC环境搭建Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		267F8001253C1FDD009D1B80 /* OpenGLMAC环境搭建UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 267F8011253C1FDD009D1B80 /* Build configuration list for PBXNativeTarget "OpenGLMAC环境搭建UITests" */;
+			buildPhases = (
+				267F7FFE253C1FDD009D1B80 /* Sources */,
+				267F7FFF253C1FDD009D1B80 /* Frameworks */,
+				267F8000253C1FDD009D1B80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				267F8004253C1FDD009D1B80 /* PBXTargetDependency */,
+			);
+			name = "OpenGLMAC环境搭建UITests";
+			productName = "OpenGLMAC环境搭建UITests";
+			productReference = 267F8002253C1FDD009D1B80 /* OpenGLMAC环境搭建UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		267F7FD9253C1FDB009D1B80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "wei wang";
+				TargetAttributes = {
+					267F7FE0253C1FDB009D1B80 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					267F7FF6253C1FDD009D1B80 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 267F7FE0253C1FDB009D1B80;
+					};
+					267F8001253C1FDD009D1B80 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 267F7FE0253C1FDB009D1B80;
+					};
+				};
+			};
+			buildConfigurationList = 267F7FDC253C1FDB009D1B80 /* Build configuration list for PBXProject "OpenGLMAC环境搭建" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 267F7FD8253C1FDB009D1B80;
+			productRefGroup = 267F7FE2253C1FDB009D1B80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				267F7FE0253C1FDB009D1B80 /* OpenGLMAC环境搭建 */,
+				267F7FF6253C1FDD009D1B80 /* OpenGLMAC环境搭建Tests */,
+				267F8001253C1FDD009D1B80 /* OpenGLMAC环境搭建UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		267F7FDF253C1FDB009D1B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267F7FEB253C1FDD009D1B80 /* Assets.xcassets in Resources */,
+				267F7FEE253C1FDD009D1B80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		267F7FF5253C1FDD009D1B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		267F8000253C1FDD009D1B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		267F7FDD253C1FDB009D1B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B1568B253C42AB00252B8C /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		267F7FF3253C1FDD009D1B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267F7FFC253C1FDD009D1B80 /* OpenGLMAC____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		267F7FFE253C1FDD009D1B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267F8007253C1FDD009D1B80 /* OpenGLMAC____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		267F7FF9253C1FDD009D1B80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 267F7FE0253C1FDB009D1B80 /* OpenGLMAC环境搭建 */;
+			targetProxy = 267F7FF8253C1FDD009D1B80 /* PBXContainerItemProxy */;
+		};
+		267F8004253C1FDD009D1B80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 267F7FE0253C1FDB009D1B80 /* OpenGLMAC环境搭建 */;
+			targetProxy = 267F8003253C1FDD009D1B80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		267F7FEC253C1FDD009D1B80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				267F7FED253C1FDD009D1B80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		267F8009253C1FDD009D1B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		267F800A253C1FDD009D1B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		267F800C253C1FDD009D1B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenGLMAC环境搭建/OpenGLMAC____.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7K6888KYZ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/OpenGLMAC环境搭建/OpenGlShare\"";
+				INFOPLIST_FILE = "OpenGLMAC环境搭建/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGLMAC环境搭建/OpenGlShare",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangwei.OpenGLMAC----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		267F800D253C1FDD009D1B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "OpenGLMAC环境搭建/OpenGLMAC____.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7K6888KYZ5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/OpenGLMAC环境搭建/OpenGlShare\"";
+				INFOPLIST_FILE = "OpenGLMAC环境搭建/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenGLMAC环境搭建/OpenGlShare",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangwei.OpenGLMAC----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		267F800F253C1FDD009D1B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7K6888KYZ5;
+				INFOPLIST_FILE = "OpenGLMAC环境搭建Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangwei.OpenGLMAC----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLMAC环境搭建.app/Contents/MacOS/OpenGLMAC环境搭建";
+			};
+			name = Debug;
+		};
+		267F8010253C1FDD009D1B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7K6888KYZ5;
+				INFOPLIST_FILE = "OpenGLMAC环境搭建Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangwei.OpenGLMAC----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLMAC环境搭建.app/Contents/MacOS/OpenGLMAC环境搭建";
+			};
+			name = Release;
+		};
+		267F8012253C1FDD009D1B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7K6888KYZ5;
+				INFOPLIST_FILE = "OpenGLMAC环境搭建UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangwei.OpenGLMAC----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGLMAC环境搭建";
+			};
+			name = Debug;
+		};
+		267F8013253C1FDD009D1B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7K6888KYZ5;
+				INFOPLIST_FILE = "OpenGLMAC环境搭建UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wangwei.OpenGLMAC----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "OpenGLMAC环境搭建";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		267F7FDC253C1FDB009D1B80 /* Build configuration list for PBXProject "OpenGLMAC环境搭建" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267F8009253C1FDD009D1B80 /* Debug */,
+				267F800A253C1FDD009D1B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		267F800B253C1FDD009D1B80 /* Build configuration list for PBXNativeTarget "OpenGLMAC环境搭建" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267F800C253C1FDD009D1B80 /* Debug */,
+				267F800D253C1FDD009D1B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		267F800E253C1FDD009D1B80 /* Build configuration list for PBXNativeTarget "OpenGLMAC环境搭建Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267F800F253C1FDD009D1B80 /* Debug */,
+				267F8010253C1FDD009D1B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		267F8011253C1FDD009D1B80 /* Build configuration list for PBXNativeTarget "OpenGLMAC环境搭建UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				267F8012253C1FDD009D1B80 /* Debug */,
+				267F8013253C1FDD009D1B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 267F7FD9253C1FDB009D1B80 /* Project object */;
+}
